@@ -4,6 +4,7 @@ import Navbar from './Component/Navbar';
 import TextForm from './Component/TextForm';
 import React, { useState } from 'react';
 import Alert from './Component/Alert';
+import Footer from './Component/Footer';
 
 function App() {
   const [mode, setmode] = useState('light');
@@ -75,6 +76,7 @@ function App() {
       <Navbar title="TextUtil" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <TextForm tAlert={tAlert} heading="Enter your Text for Analyze" mode={mode} />
+      <Footer />
     </div>
   );
 }
